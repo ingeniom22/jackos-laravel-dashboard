@@ -14,6 +14,10 @@ return new class extends Migration
         Schema::create('services', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('service');
+            $table->string('service_description');
+            $table->date('effective_start_date');
+            $table->date('effective_end_date');
         });
     }
 
