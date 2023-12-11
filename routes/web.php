@@ -1,6 +1,11 @@
 <?php
 
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,4 +33,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+Route::get('/customer', [CustomerController::class, 'index'])->name('customer.index');
+Route::get('/employee', [EmployeeController::class, 'index'])->name('employee.index');
+Route::get('/payment', [PaymentController::class, 'index'])->name('payment.index');
+Route::get('/service', [ServiceController::class, 'index'])->name('service.index');
+Route::get('/transaction', [TransactionController::class, 'index'])->name('transaction.index');
+
+require __DIR__ . '/auth.php';
