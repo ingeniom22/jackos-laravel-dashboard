@@ -15,6 +15,9 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->foreign('customer_id')->references('id')->on('customers');
+            $table->foreign('service_id')->references('id')->on('services');
+            $table->foreign('employee_id')->references('id')->on('employees');
+            $table->foreign('payment_id')->references('id')->on('payments');
         });
     }
 
