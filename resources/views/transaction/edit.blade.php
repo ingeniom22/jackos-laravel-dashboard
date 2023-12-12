@@ -17,27 +17,30 @@
 
                         <!-- Add your form fields here -->
                         <div class="mb-4">
-                            <label for="customer_id" class="block text-sm font-medium text-gray-600">Customer ID:</label>
-                            <input type="text" name="customer_id" id="customer_id" class="form-input mt-1 block w-full" value="{{ $transaction->customer_id }}" />
+                            <label for="customer_id" class="block text-sm font-bold text-gray-600 ">Customer
+                                ID:</label>
+                            <input type="text" name="customer_id" id="customer_id" class="form-input mt-1 block w-full rounded-lg" value="{{ $transaction->customer_id }}" />
                         </div>
 
                         <div class="mb-4">
-                            <label for="service_id" class="block text-sm font-medium text-gray-600">Service ID:</label>
-                            <input type="text" name="service_id" id="service_id" class="form-input mt-1 block w-full" value="{{ $transaction->service_id }}" />
+                            <label for="service_id" class="block text-sm font-bold text-gray-600">Service ID:</label>
+                            <input type="text" name="service_id" id="service_id" class="form-input mt-1 block w-full rounded-lg" value="{{ $transaction->service_id }}" />
                         </div>
 
                         <div class="mb-4">
-                            <label for="employee_id" class="block text-sm font-medium text-gray-600">Employee ID:</label>
-                            <input type="text" name="employee_id" id="employee_id" class="form-input mt-1 block w-full" value="{{ $transaction->employee_id }}" />
+                            <label for="employee_id" class="block text-sm font-bold text-gray-600">Employee
+                                ID:</label>
+                            <input type="text" name="employee_id" id="employee_id" class="form-input mt-1 block w-full rounded-lg" value="{{ $transaction->employee_id }}" />
                         </div>
 
                         <div class="mb-4">
-                            <label for="payment_id" class="block text-sm font-medium text-gray-600">Payment ID:</label>
-                            <input type="text" name="payment_id" id="payment_id" class="form-input mt-1 block w-full" value="{{ $transaction->payment_id }}" />
+                            <label for="payment_id" class="block text-sm font-bold text-gray-600">Payment ID:</label>
+                            <input type="text" name="payment_id" id="payment_id" class="form-input mt-1 block w-full rounded-lg" value="{{ $transaction->payment_id }}" />
                         </div>
 
                         <div class="mb-4">
-                            <button type="submit" class="btn btn-primary text-white px-4 py-2 rounded-md">Update Transaction</button>
+                            <button type="submit" class="btn btn-accent text-white px-4 py-2 rounded-md">Update
+                                Transaction</button>
                         </div>
                     </form>
                 </div>
