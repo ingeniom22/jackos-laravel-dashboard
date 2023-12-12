@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Customer;
+use App\Models\Service;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
@@ -15,10 +17,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // DB::table('customers')->insert([
-        //     'customer_name' => Str::random(10),
-        //     'phone_no'=>Str::random(10),
-        //     'membership'=>Str::random(10),
-        // ]);
+        $this->call([
+            CustomerSeeder::class,
+            EmployeeSeeder::class,
+            PaymentSeeder::class,
+            ServiceSeeder::class,
+            TransactionSeeder::class,
+        ]);
     }
 }

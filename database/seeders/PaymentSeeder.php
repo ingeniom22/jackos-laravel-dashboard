@@ -2,12 +2,12 @@
 
 namespace Database\Seeders;
 
+use App\Models\Payment;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Customer;
 use Faker\Factory as Faker;
 
-class CustomerSeeder extends Seeder
+class PaymentSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,12 +16,11 @@ class CustomerSeeder extends Seeder
     {
         $faker = Faker::create();
 
-        // Seed 10 rows with Faker-generated data
         for ($i = 1; $i <= 10; $i++) {
-            Customer::create([
-                'customer_name' => $faker->name,
-                'phone_no' => $faker->phoneNumber,
-                'membership' => $faker->randomElement(['gold', 'silver', 'bronze']),
+            Payment::create([
+                'payments' => $faker->randomElement(['OVO', 'GoPay', 'ShopeePay', 'QRIS', 'Bank Transfer']),
+                'description' => $faker->text,
+                'fee' => $faker->randomFloat(2, 0, 0.1),
             ]);
         }
     }

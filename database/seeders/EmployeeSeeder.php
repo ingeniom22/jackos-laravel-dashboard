@@ -2,12 +2,12 @@
 
 namespace Database\Seeders;
 
+use App\Models\Employee;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Customer;
 use Faker\Factory as Faker;
 
-class CustomerSeeder extends Seeder
+class EmployeeSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -18,10 +18,12 @@ class CustomerSeeder extends Seeder
 
         // Seed 10 rows with Faker-generated data
         for ($i = 1; $i <= 10; $i++) {
-            Customer::create([
-                'customer_name' => $faker->name,
+            Employee::create([
+                'employee_name' => $faker->name,
+                'email' => $faker->email,
                 'phone_no' => $faker->phoneNumber,
-                'membership' => $faker->randomElement(['gold', 'silver', 'bronze']),
+                'contract_start_date' => $faker->date,
+                'contract_end_date' => $faker->date,
             ]);
         }
     }
