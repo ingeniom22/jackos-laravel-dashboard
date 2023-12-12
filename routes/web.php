@@ -33,10 +33,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/customer', [CustomerController::class, 'index'])->name('customer.index');
-Route::get('/employee', [EmployeeController::class, 'index'])->name('employee.index');
-Route::get('/payment', [PaymentController::class, 'index'])->name('payment.index');
-Route::get('/service', [ServiceController::class, 'index'])->name('service.index');
-Route::get('/transaction', [TransactionController::class, 'index'])->name('transaction.index');
+Route::resource('transaction', TransactionController::class);
 
 require __DIR__ . '/auth.php';
