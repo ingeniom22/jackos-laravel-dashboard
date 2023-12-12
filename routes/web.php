@@ -34,5 +34,6 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::resource('transaction', TransactionController::class);
+Route::resource('employee', EmployeeController::class);
 
 require __DIR__ . '/auth.php';
