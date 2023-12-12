@@ -16,7 +16,7 @@ return new class extends Migration
             $table->timestamps();
             $table->string('payments');
             $table->string('description');
-            $table->string('fee');
+            $table->float('fee');
         });
     }
 
