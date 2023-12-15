@@ -29,10 +29,10 @@
                             @foreach ($transactions as $transaction)
                             <tr>
                                 <td class="w-1/6 py-2 px-4 border">{{ $transaction->id }}</td>
-                                <td class="w-1/6 py-2 px-4 border">{{ $transaction->customer_id }}</td>
-                                <td class="w-1/6 py-2 px-4 border">{{ $transaction->service_id }}</td>
-                                <td class="w-1/6 py-2 px-4 border">{{ $transaction->employee_id }}</td>
-                                <td class="w-1/6 py-2 px-4 border">{{ $transaction->payment_id }}</td>
+                                <td class="w-1/6 py-2 px-4 border">{{ $transaction->customer_name }}</td>
+                                <td class="w-1/6 py-2 px-4 border">{{ $transaction->service }}</td>
+                                <td class="w-1/6 py-2 px-4 border">{{ $transaction->employee_name }}</td>
+                                <td class="w-1/6 py-2 px-4 border">{{ $transaction->payments }}</td>
                                 <td class="w-1/6 py-2 px-4 border">
                                     <div class="btn-group" role="group">
                                         <a href="{{ route('transaction.edit', $transaction->id) }}" class="btn btn-warning text-white">Edit</a>

@@ -35,5 +35,8 @@ Route::middleware('auth')->group(function () {
 
 Route::resource('transaction', TransactionController::class);
 Route::resource('employee', EmployeeController::class);
+Route::resource('customer', CustomerController::class);
+Route::resource('payment', PaymentController::class);
+Route::resource('service', ServiceController::class);
 
 require __DIR__ . '/auth.php';
