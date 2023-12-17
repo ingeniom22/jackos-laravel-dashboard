@@ -27,12 +27,12 @@ class CustomerController extends Controller
 
     public function show(Customer $customer)
     {
-        return view('customer.show', ['Customer' => $customer]);
+        return view('customer.show', ['customer' => $customer]);
     }
 
     public function edit(Customer $customer)
     {
-        return view('customer.edit', ['Customer' => $customer]);
+        return view('customer.edit', ['customer' => $customer]);
     }
 
     public function update(Request $request, Customer $customer)
