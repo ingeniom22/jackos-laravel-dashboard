@@ -18,24 +18,22 @@
                         <div class="mb-4">
                             <label for="payment_name" class="block text-sm font-medium text-gray-600">Payment
                                 Name:</label>
-                            <input type="text" name="payment_name" id="payment_name"
-                                class="form-input mt-1 block w-full required" />
+                            <input type="text" name="payment_name" id="payment_name" class="form-input mt-1 block w-full required rounded-md" />
                         </div>
 
                         <div class="mb-4">
                             <label for="payment_description" class="block text-sm font-medium text-gray-600">Payment
                                 Description:</label>
-                            <input type="text" name="description" id="description"
-                                class="form-input mt-1 block w-full required" />
+                            <input type="text" name="description" id="description" class="form-input mt-1 block w-full required rounded-md" />
                         </div>
 
                         <div class="mb-4">
                             <label for="fee" class="block text-sm font-medium text-gray-600">Fee:</label>
-                            <input type="text" name="fee" id="fee" class="form-input mt-1 block w-full required" />
+                            <input type="text" name="fee" id="fee" class="form-input mt-1 block w-full required rounded-md" />
                         </div>
 
                         <div class="mb-4">
-                            <button type="submit" class="btn btn-primary text-white px-4 py-2 rounded-md">Create
+                            <button type="submit" class="btn btn-accent text-white px-4 py-2 rounded-md">Create
                                 payment</button>
                         </div>
                     </form>

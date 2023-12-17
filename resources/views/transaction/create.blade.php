@@ -16,27 +16,30 @@
 
                         <!-- Add your form fields here -->
                         <div class="mb-4">
-                            <label for="customer_id" class="block text-sm font-medium text-gray-600">Customer ID:</label>
-                            <input type="text" name="customer_id" id="customer_id" class="form-input mt-1 block w-full required" />
+                            <label for="customer_id" class="block text-sm font-medium text-gray-600">Customer
+                                ID:</label>
+                            <input type="text" name="customer_id" id="customer_id" class="form-input mt-1 block w-full required rounded-md" />
                         </div>
 
                         <div class="mb-4">
                             <label for="service_id" class="block text-sm font-medium text-gray-600">Service ID:</label>
-                            <input type="text" name="service_id" id="service_id" class="form-input mt-1 block w-full required" />
+                            <input type="text" name="service_id" id="service_id" class="form-input mt-1 block w-full required rounded-md" />
                         </div>
 
                         <div class="mb-4">
-                            <label for="employee_id" class="block text-sm font-medium text-gray-600">Employee ID:</label>
-                            <input type="text" name="employee_id" id="employee_id" class="form-input mt-1 block w-full required" />
+                            <label for="employee_id" class="block text-sm font-medium text-gray-600">Employee
+                                ID:</label>
+                            <input type="text" name="employee_id" id="employee_id" class="form-input mt-1 block w-full required rounded-md" />
                         </div>
 
                         <div class="mb-4">
                             <label for="payment_id" class="block text-sm font-medium text-gray-600">Payment ID:</label>
-                            <input type="text" name="payment_id" id="payment_id" class="form-input mt-1 block w-full required" />
+                            <input type="text" name="payment_id" id="payment_id" class="form-input mt-1 block w-full required rounded-md" />
                         </div>
 
                         <div class="mb-4">
-                            <button type="submit" class="btn btn-primary text-white px-4 py-2 rounded-md">Create Transaction</button>
+                            <button type="submit" class="btn btn-accent text-white px-4 py-2 rounded-md">Create
+                                Transaction</button>
                         </div>
                     </form>
                 </div>

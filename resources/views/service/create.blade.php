@@ -18,29 +18,29 @@
                         <div class="mb-4">
                             <label for="service_name" class="block text-sm font-medium text-gray-600">Service
                                 Name:</label>
-                            <input type="text" name="service_name" id="service_name" class="form-input mt-1 block w-full required" />
+                            <input type="text" name="service_name" id="service_name" class="form-input mt-1 block w-full required rounded-md" />
                         </div>
 
                         <div class="mb-4">
                             <label for="service_description" class="block text-sm font-medium text-gray-600">Service
                                 Description:</label>
-                            <input type="text" name="description" id="description" class="form-input mt-1 block w-full required" />
+                            <input type="text" name="description" id="description" class="form-input mt-1 block w-full required rounded-md" />
                         </div>
 
                         <div class="mb-4">
                             <label for="contract_start" class="block text-sm font-medium text-gray-600">Contract Start
                                 Date:</label>
-                            <input type="date" name="contract_start" id="contract_start" class="form-input mt-1 block w-full required" />
+                            <input type="date" name="contract_start" id="contract_start" class="form-input mt-1 block w-full required rounded-md" />
                         </div>
 
                         <div class="mb-4">
                             <label for="contract_end" class="block text-sm font-medium text-gray-600">Contract End
                                 Date:</label>
-                            <input type="date" name="contract_end" id="contract_end" class="form-input mt-1 block w-full required" />
+                            <input type="date" name="contract_end" id="contract_end" class="form-input mt-1 block w-full required rounded-md" />
                         </div>
 
                         <div class="mb-4">
-                            <button type="submit" class="btn btn-primary text-white px-4 py-2 rounded-md">Create
+                            <button type="submit" class="btn btn-accent text-white px-4 py-2 rounded-md">Create
                                 Service</button>
                         </div>
                     </form>
