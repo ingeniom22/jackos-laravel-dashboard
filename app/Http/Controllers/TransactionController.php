@@ -11,10 +11,17 @@ class TransactionController extends Controller
     public function index()
     {
         $transactions = DB::table('transactions')
-            ->join('services', 'service_id', '=', 'services.id')
-            ->join('employees', 'employee_id', '=', 'employees.id')
-            ->join('payments', 'payment_id', '=', 'payments.id')
-            ->join('customers', 'customer_id', '=', 'customers.id')
+            ->join('services', 'transactions.service_id', '=', 'services.id')
+            ->join('employees', 'transactions.employee_id', '=', 'employees.id')
+            ->join('payments', 'transactions.payment_id', '=', 'payments.id')
+            ->join('customers', 'transactions.customer_id', '=', 'customers.id')
+            ->select(
+                'transactions.id',
+                'customers.customer_name',
+                'services.service as service',
+                'employees.employee_name',
+                'payments.payments as payments'
+            )
             ->get();
 
         // return view('transaction.index', ['transactions' => Transaction::all()]);
