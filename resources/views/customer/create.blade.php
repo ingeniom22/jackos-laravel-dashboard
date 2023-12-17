@@ -21,27 +21,19 @@
                             <input type="text" name="customer_name" id="customer_name" class="form-input mt-1 block w-full required rounded-md" />
                         </div>
 
-                        <div class="mb-4">
-                            <label for="customer_email" class="block text-sm font-medium text-gray-600">Email:</label>
-                            <input type="text" name="email" id="email" class="form-input mt-1 block w-full required rounded-md" />
-                        </div>
+            
 
                         <div class="mb-4">
                             <label for="phone_no" class="block text-sm font-medium text-gray-600">Phone Number:</label>
                             <input type="text" name="phone_no" id="phone_no" class="form-input mt-1 block w-full required rounded-md" />
                         </div>
-
+                       
                         <div class="mb-4">
-                            <label for="contract_start" class="block text-sm font-medium text-gray-600">Contract Start
-                                Date:</label>
-                            <input type="date" name="contract_start_date" id="contract_start_date" class="form-input mt-1 block w-full required rounded-md" />
+                            <label for="membership" class="block text-sm font-medium text-gray-600">Membership:</label>
+                            <input type="text" name="membership" id="membership" class="form-input mt-1 block w-full required rounded-md" />
                         </div>
 
-                        <div class="mb-4">
-                            <label for="contract_end" class="block text-sm font-medium text-gray-600">Contract End
-                                Date:</label>
-                            <input type="date" name="contract_end_date" id="contract_end_date" class="form-input mt-1 block w-full required rounded-md" />
-                        </div>
+        
 
 
                         <div class="mb-4">
