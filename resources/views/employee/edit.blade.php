@@ -35,13 +35,13 @@
                         <div class="mb-4">
                             <label for="contract_start" class="block text-sm font-medium text-gray-600">Contract Start
                                 Date:</label>
-                            <input type="date" name="contract_start" id="contract_start" class="form-input mt-1 block w-full required rounded-md" value="{{ $employee->contract_start_date}}" />
+                            <input type="date" name="contract_start_date" id="contract_start" class="form-input mt-1 block w-full required rounded-md" value="{{ $employee->contract_start_date}}" />
                         </div>
 
                         <div class="mb-4">
                             <label for="contract_end" class="block text-sm font-medium text-gray-600">Contract End
                                 Date:</label>
-                            <input type="date" name="contract_end" id="contract_end" class="form-input mt-1 block w-full required rounded-md" value="{{ $employee->contract_end_date}}" />
+                            <input type="date" name="contract_end_date" id="contract_end" class="form-input mt-1 block w-full required rounded-md" value="{{ $employee->contract_end_date}}" />
                         </div>
 
                         <div class="mb-4">

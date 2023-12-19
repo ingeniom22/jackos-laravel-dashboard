@@ -16,9 +16,9 @@
 
                         <!-- Add your form fields here -->
                         <div class="mb-4">
-                            <label for="payment_name" class="block text-sm font-medium text-gray-600">Payment
+                            <label for="payments" class="block text-sm font-medium text-gray-600">Payment
                                 Name:</label>
-                            <input type="text" name="payment_name" id="payment_name" class="form-input mt-1 block w-full required rounded-md" />
+                            <input type="text" name="payments" id="payments" class="form-input mt-1 block w-full required rounded-md" />
                         </div>
 
                         <div class="mb-4">
