@@ -22,7 +22,6 @@
                             <input type="text" name="customer_name" id="customer_name" class="form-input mt-1 block w-full required rounded-md" value="{{ $customer->customer_name }}" />
                         </div>
 
-    
 
                         <div class="mb-4">
                             <label for="phone_no" class="block text-sm font-medium text-gray-600">Phone Number: </label>

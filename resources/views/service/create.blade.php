@@ -16,27 +16,27 @@
 
                         <!-- Add your form fields here -->
                         <div class="mb-4">
-                            <label for="service_name" class="block text-sm font-medium text-gray-600">Service
+                            <label for="service" class="block text-sm font-medium text-gray-600">Service
                                 Name:</label>
-                            <input type="text" name="service_name" id="service_name" class="form-input mt-1 block w-full required rounded-md" />
+                            <input type="text" name="service" id="service" class="form-input mt-1 block w-full required rounded-md" />
                         </div>
 
                         <div class="mb-4">
                             <label for="service_description" class="block text-sm font-medium text-gray-600">Service
                                 Description:</label>
-                            <input type="text" name="description" id="description" class="form-input mt-1 block w-full required rounded-md" />
+                            <input type="text" name="service_description" id="service_description" class="form-input mt-1 block w-full required rounded-md" />
                         </div>
 
                         <div class="mb-4">
-                            <label for="contract_start" class="block text-sm font-medium text-gray-600">Contract Start
+                            <label for="effective_start_date" class="block text-sm font-medium text-gray-600">Effective Start
                                 Date:</label>
-                            <input type="date" name="contract_start" id="contract_start" class="form-input mt-1 block w-full required rounded-md" />
+                            <input type="date" name="effective_start_date" id="effective_start_date" class="form-input mt-1 block w-full required rounded-md" />
                         </div>
 
                         <div class="mb-4">
-                            <label for="contract_end" class="block text-sm font-medium text-gray-600">Contract End
+                            <label for="effective_end_date" class="block text-sm font-medium text-gray-600">Effective End
                                 Date:</label>
-                            <input type="date" name="contract_end" id="contract_end" class="form-input mt-1 block w-full required rounded-md" />
+                            <input type="date" name="effective_end_date" id="effective_end_date" class="form-input mt-1 block w-full required rounded-md" />
                         </div>
 
                         <div class="mb-4">
