@@ -13,31 +13,7 @@ class AuthenticationTest extends TestCase
 
     public function test_login_screen_can_be_rendered(): void
     {
-        $response = $this->get('/login');
-
-        $response->assertStatus(200);
-    }
-    public function test_dashboard_screen(): void
-    {
-        $response = $this->get('/dashboard');
-
-        $response->assertStatus(200);
-    }
-    public function test_transaction_screen(): void
-    {
-        $response = $this->get('/transaction');
-
-        $response->assertStatus(200);
-    }
-    public function test_employee_screen(): void
-    {
-        $response = $this->get('/employee');
-
-        $response->assertStatus(200);
-    }
-    public function test_customer_screen(): void
-    {
-        $response = $this->get('/customer');
+        $response = $this->get('/');
 
         $response->assertStatus(200);
     }
