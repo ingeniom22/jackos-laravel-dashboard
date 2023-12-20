@@ -14,7 +14,7 @@
 </head>
 
 <body class="container mx-auto px-4 font-sans antialiased">
-    <div class="min-h-screen bg-gray-100">
+    <div class="min-h-screen bg-gray-200 rounded-lg">
         @include('layouts.navigation')
         <!-- Page Heading -->
         @if (isset($header))
@@ -28,7 +28,7 @@
         <main>
             <div class="flex">
                 <!-- Sidebar -->
-                <div class="w-1/5 bg-gray-200 p-2 h-screen">
+                <div class="w-1/5 p-2 h-screen">
                     <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg h-screen">
                         <div class="flex flex-col space-y-2 p-2">
                             <a href="{{ route('dashboard') }}" class="btn">Dashboard</a>
