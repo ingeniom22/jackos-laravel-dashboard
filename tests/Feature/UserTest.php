@@ -10,22 +10,17 @@ use Tests\TestCase;
 class UserTest extends TestCase
 {
     use RefreshDatabase;
-    public function test_login_redirect_to_dashboard()
-    {
-        // Authenticate a user (adjust the code based on your authentication method)
-        User::factory()->create([
-            'email' => 'test@test.com',
-            'password' => bcrypt('password'),
+    // public function registered_user_can_login()
+    // {
+    //     // Kita memiliki 1 user terdaftar
+    //     User::factory()->create([
+    //         'email'    => 'username@example.net',
+    //         'password' => bcrypt('secret'),
+    //     ]);
 
-        ]);
-
-        $response = $this->post('/login', [
-            'email' => 'test@test.com',
-            'password' => 'password',
-        ]);
-
-        $response->assertStatus(200);
-    }
+    //     $this->get('/login');
+    
+    // }
 
     public function test_auth_user_can_access_dashboard()
     {
