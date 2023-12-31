@@ -27,4 +27,14 @@ class Handler extends ExceptionHandler
             //
         });
     }
+
+    // public function render($request, Throwable $exception)
+    // {
+    //     if ($this->isHttpException($exception)) {
+    //         return $this->renderHttpException($exception);
+    //     } else {
+    //         // Customize this line to use your custom error view
+    //         return response()->view('errors.error', [], 500);
+    //     }
+    // }
 }

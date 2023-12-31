@@ -15,16 +15,15 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
 
-            $table->unsignedBigInteger('customer_id');
-            $table->unsignedBigInteger('service_id');
-            $table->unsignedBigInteger('employee_id');
-            $table->unsignedBigInteger('payment_id');
+            $table->unsignedBigInteger('customer_id')->unsigned()->nullable();
+            $table->unsignedBigInteger('service_id')->unsigned()->nullable();
+            $table->unsignedBigInteger('employee_id')->unsigned()->nullable();
+            $table->unsignedBigInteger('payment_id')->unsigned()->nullable();
 
-            $table->foreign('customer_id')->references('id')->on('customers');
-            $table->foreign('service_id')->references('id')->on('services');
-            $table->foreign('employee_id')->references('id')->on('employees');
-            $table->foreign('payment_id')->references('id')->on('payments');
-
+            $table->foreign('customer_id')->references('id')->on('customers')->onDelete('set null');
+            $table->foreign('service_id')->references('id')->on('services')->onDelete('set null');
+            $table->foreign('employee_id')->references('id')->on('employees')->onDelete('set null');
+            $table->foreign('payment_id')->references('id')->on('payments')->onDelete('set null');
         });
     }
 
