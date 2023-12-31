@@ -13,10 +13,10 @@
                                 <thead class="bg-gradient-to-r from-teal-400 to-teal-600 text-white">
                                     <tr>
                                         <th class="w-1/6 py-3 px-4 border">ID</th>
-                                        <th class="w-1/6 py-3 px-4 border">Customer ID</th>
-                                        <th class="w-1/6 py-3 px-4 border">Service ID</th>
-                                        <th class="w-1/6 py-3 px-4 border">Employee ID</th>
-                                        <th class="w-1/6 py-3 px-4 border">Payment ID</th>
+                                        <th class="w-1/6 py-3 px-4 border">Customer Name</th>
+                                        <th class="w-1/6 py-3 px-4 border">Service Type</th>
+                                        <th class="w-1/6 py-3 px-4 border">Employee Name</th>
+                                        <th class="w-1/6 py-3 px-4 border">Payment Type</th>
                                         <th class="w-1/6 py-3 px-4 border">Actions</th>
                                         <!-- Add this column for actions -->
                                     </tr>
