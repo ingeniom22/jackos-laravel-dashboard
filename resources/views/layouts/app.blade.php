@@ -31,15 +31,30 @@
                 <div class="w-1/5 p-2 h-screen">
                     <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg h-screen">
                         <div class="flex flex-col space-y-2 p-2">
-                            <a href="{{ route('dashboard') }}" class="btn">Dashboard</a>
-                            <a href="{{ route('transaction.index') }}" class="btn">Transactions</a>
-                            <a href="{{ route('customer.index') }}" class="btn">Customers</a>
-                            <a href="{{ route('employee.index') }}" class="btn">Employees</a>
-                            <a href="{{ route('payment.index') }}" class="btn">Payments</a>
-                            <a href="{{ route('service.index') }}" class="btn">Services</a>
+                            <a href="{{ route('transaction.index') }}" class="flex btn">
+                                <img src="{{ asset('images/transaction.png') }}" alt="Transaction Logo" class="w-6 h-6 mr-2">
+                                Transactions
+                            </a>
+                            <a href="{{ route('customer.index') }}" class="flex btn">
+                                <img src="{{ asset('images/customer.png') }}" alt="Customer Logo" class="w-6 h-6 mr-2">
+                                Customers
+                            </a>
+                            <a href="{{ route('employee.index') }}" class="flex btn">
+                                <img src="{{ asset('images/employee.png') }}" alt="Employee Logo" class="w-6 h-6 mr-2">
+                                Employees
+                            </a>
+                            <a href="{{ route('payment.index') }}" class="flex btn">
+                                <img src="{{ asset('images/payment.png') }}" alt="Payment Logo" class="w-6 h-6 mr-2">
+                                Payments
+                            </a>
+                            <a href="{{ route('service.index') }}" class="flex btn">
+                                <img src="{{ asset('images/customer-service.png') }}" alt="Service Logo" class="w-6 h-6 mr-2">
+                                Services
+                            </a>
                         </div>
                     </div>
                 </div>
+
                 <!-- Main Content -->
                 <div class="w-4/5 p-2">
                     {{ $slot }}
